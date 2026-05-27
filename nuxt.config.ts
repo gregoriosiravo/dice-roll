@@ -1,11 +1,16 @@
+/// <reference types="node" />
+
+// GitHub Pages project site: https://<user>.github.io/dice-roll/
+const baseURL = process.env.NUXT_APP_BASE_URL || '/dice-roll/'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   nitro: {
-    preset: 'github_pages'
+    preset: 'github_pages',
   },
   devtools: { enabled: true },
   app: {
-    baseURL: '/dice-roll/',
+    baseURL,
     head: {
       title: 'D&D Dice Roller',
       meta: [

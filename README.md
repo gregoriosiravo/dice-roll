@@ -22,12 +22,28 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## GitHub Pages
+
+The app is deployed to [https://gregoriosiravo.github.io/dice-roll/](https://gregoriosiravo.github.io/dice-roll/) (project site). The base path is set via `NUXT_APP_BASE_URL=/dice-roll/` in the GitHub Actions workflow.
+
+In **Settings → Pages**, set **Build and deployment** source to **GitHub Actions** (not “Deploy from a branch”).
+
+To preview the production build locally:
+
+```bash
+NUXT_APP_BASE_URL=/dice-roll/ npm run generate
+npx serve .output/public
+```
+
+Then open `http://localhost:3000/dice-roll/`.
+
 ## Scripts
 
 | Command        | Description              |
 | -------------- | ------------------------ |
 | `npm run dev`  | Start development server |
 | `npm run build`| Build for production     |
+| `npm run generate` | Static export for GitHub Pages |
 | `npm run preview` | Preview production build |
 
 ## Tech stack

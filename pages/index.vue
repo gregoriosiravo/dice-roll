@@ -52,7 +52,7 @@ function onQuickRoll(sides: number) {
     <RollHistory :history="history" @clear="clearHistory" />
 
     <footer class="footer">
-      <p>Built for tabletop D&amp;D players · <a href="https://github.com/sirap95/dice-roll" target="_blank" rel="noopener">GitHub</a></p>
+      <p>Built for tabletop D&amp;D players · <a href="https://github.com/gregoriosiravo/dice-roll" target="_blank" rel="noopener">GitHub</a></p>
     </footer>
   </div>
 </template>
