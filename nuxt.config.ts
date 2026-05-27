@@ -1,7 +1,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
+  nitro: {
+    preset: 'github_pages'
+  },
   devtools: { enabled: true },
   app: {
+    baseURL: '/dice-roll/',
     head: {
       title: 'D&D Dice Roller',
       meta: [
