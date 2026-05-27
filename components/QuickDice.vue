@@ -34,7 +34,6 @@ const dice = [
         @click="emit('roll', die.sides)"
       >
         <DieVisual :sides="die.sides" size="sm" />
-        <span class="die-hint">{{ die.hint }}</span>
       </button>
     </div>
   </section>
